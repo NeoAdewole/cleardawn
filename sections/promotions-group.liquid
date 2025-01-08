@@ -1,0 +1,6 @@
+<h2 style="text-align: {{ section.settings.title_alignment }}">Promotions group section</h2>
+<p>This is the promotions group section</p>
+
+{% if settings.promotion_name.size > 0 %}
+  <p>Active promotion: {{  settings.promotion_name }} </p>
+{% endif %}
