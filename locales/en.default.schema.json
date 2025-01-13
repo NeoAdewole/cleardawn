@@ -144,6 +144,12 @@
         },
         "shadow": {
           "label": "Shadow"
+        },
+        "brand_primary": {
+          "label": "Primary Brand Color"
+        },
+        "brand_secondary": {
+          "label": "Secondary Brand Color"
         }
       }
     },
@@ -699,6 +705,24 @@
       },
       "presets": {
         "name": "Custom Liquid"
+      }
+    },
+    "list-filter": {
+      "name": "List Filter",
+      "settings": {
+        "title": {
+          "label": "Filter title",
+          "default": "Filter Products",
+          "info": "Descriptive title for this filter."
+        },
+        "list": {
+          "label": "Collection list",
+          "default": "Collection list",
+          "info": "Select products or collections to display in the filter."
+        }
+      },
+      "presets": {
+        "name": "List Filter"
       }
     },
     "featured-blog": {

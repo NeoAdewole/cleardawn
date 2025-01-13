@@ -1,0 +1,48 @@
+{{ 'list-filer.css' | asset_url | stylesheet_tag }}
+
+<div class="section-{{ section.id }}-padding">
+  <h3>{{ section.settings.inline_richtext }}</h3>
+  <p>This is the list filter section</p>
+  We can has base?
+  {% comment %} filter sections on different taxonomies {% endcomment %}
+  {% comment %} filter sections on collections {% endcomment %}
+  {% for collection in section.settings.collection_list %}
+    <li>{{ collection.title }}</li>
+  {% endfor %}
+  {% comment %} filter sections on products {% endcomment %}
+  {% comment %} filter sections on pages {% endcomment %}
+  {% comment %} filter sections on blog {% endcomment %}  
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.list-filter.name",
+  "tag": "aside",
+  "class": "section-filter aside-filter",
+  "enabled_on": {
+    "groups": ["aside"],
+    "templates": ["index", "product", "collection"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "default": "t:sections.list-filter.settings.title.default",
+      "label": "t:sections.list-filter.settings.title.label",
+      "info": "t:sections.list-filter.settings.title.info"
+    },
+    {
+      "type": "collection_list",
+      "id": "collection_list",
+      "label": "t:sections.list-filter.settings.list.label",
+      "info": "t:sections.list-filter.settings.list.info",
+      "limit": 8
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.list-filter.presets.name"
+    }
+  ]
+}
+{% endschema %}
