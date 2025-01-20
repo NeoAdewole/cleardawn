@@ -3,21 +3,13 @@
   height: 100%;
   position: relative;
   text-decoration: none;
-  background-color: var(--color-brand-primary);
-  border-width: 10px;
-  /* border: solid 1px var(--border-color); */
-  /* border-radius: var(--border-radius); */
-  box-shadow: var(--shadow-horizontal-offset) var(--shadow-vertical-offset) var(--shadow-blur-radius) rgba(var(--color-shadow), var(--shadow-opacity));
+  background-color: var(--color-background);
 }
 
 .card {
   text-decoration: none;
   text-align: var(--text-alignment);
-  /* background-color: green; */
   border: var(--product-card-border-width) solid var(--product-card-border-color);
-  /* border-width: var(--product-card-border-width); */
-  /* border: solid 10px var(blue); */
-  padding: 2px;
 }
 
 .card:not(.ratio) {
