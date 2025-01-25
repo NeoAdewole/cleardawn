@@ -8,8 +8,13 @@
   border: solid 1px var(--color-brand-primary);
 }
 
-.product-card-wrapper .card_inner {
-  min-height: 50%;
+.product-card-wrapper .card__inner {
+  /* min-height: 50%; */
+  height: inherit;
+}
+
+.product-card-wrapper .card__inner .card__badge {
+  position: absolute;
 }
 
 .product-card-wrapper .card--standard .card__inner .card__media {
@@ -22,6 +27,7 @@
 .product-card-wrapper .card--standard .card__inner .card__media img {
   object-fit: contain;
 }
+
 
 /* .product-card-wrapper .card--standard .card__inner .card__media .media {
   
