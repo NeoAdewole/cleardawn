@@ -24,10 +24,6 @@
   width: calc(100% - 2 * var(--image-padding));
 }
 
-.product-card-wrapper .card--standard .card__inner .card__media img {
-  object-fit: contain;
-}
-
 
 /* .product-card-wrapper .card--standard .card__inner .card__media .media {
   
@@ -61,7 +57,7 @@
 }
 
 .product-card-wrapper .card--standard>.card__content .card__information {
-  padding: 1em;
+  padding: 0.6em 0.3em;
 }
 
 .product-card-wrapper .card__information:hover {
