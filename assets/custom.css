@@ -9,7 +9,7 @@
 }
 
 .product-card-wrapper .card__inner {
-  /* min-height: 50%; */
+  min-height: 75%;
   height: inherit;
 }
 
@@ -35,12 +35,19 @@
   /* width: 100%; */
 }
 
+/* Add flexbox layout to the card content */
 .product-card-wrapper .card:not(.ratio)>.card__content {
-  grid-template-rows: max-content minmax(0, 1fr) max-content auto;
+  /* grid-template-rows: max-content minmax(0, 1fr) max-content auto; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
+/* Ensure the card information takes up the remaining space */
 .product-card-wrapper .card__information {
-  grid-row-start: 3;
+  flex-grow: 1;
+  /* grid-row-start: 3; */
   color: var(--color-brand-primary);
   padding: 1em;
   background-color: var(--color-background);
