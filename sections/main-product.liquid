@@ -213,7 +213,8 @@
                 
                   <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
                     {% for key in product.metafields.custom %}
-                      ({{- key[0] -}})
+                      <!-- ToDo: Fix or Remove this custom section -->
+                      {% comment %} {{- key[0] -}} {% endcomment %}
                       {%- assign key = all_products[block.settings.product] -%}
                           <div style={% if key[1] == blank %}"display: none;"{% endif %}>
                             ({{ key[0] }})
