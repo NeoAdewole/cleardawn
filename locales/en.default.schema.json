@@ -707,6 +707,22 @@
         "name": "Custom Liquid"
       }
     },
+    "custom-product-details": {
+      "name": "Custom Product Details",
+      "settings": {
+        "title": {
+          "default": "Product details",
+          "label": "Heading"
+        },
+        "heading":{
+          "default": "Unique Product details",
+          "label": "Heading"          
+        },
+      },
+      "presets": {
+        "name": "Custom product details"
+      }
+    },
     "list-filter": {
       "name": "List Filter",
       "settings": {
