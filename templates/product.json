@@ -82,128 +82,6 @@
         "padding_bottom": 12
       }
     },
-    "collapsible_content_tGJhKG": {
-      "type": "collapsible-content",
-      "blocks": {
-        "collapsible_row_BEH4iB": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Special Features",
-            "icon": "check_mark",
-            "row_content": "<p>{{ product.metafields.custom.special_features | metafield_tag }}</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_ijJcE8": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "General Specifications",
-            "icon": "check_mark",
-            "row_content": "<p>{{ product.metafields.custom.general_specifications | metafield_tag }}</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_mX8zjf": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Technical Overview",
-            "icon": "check_mark",
-            "row_content": "<p>{{ product.metafields.custom.technical_overview | metafield_tag }}</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_bWPJTh": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Size and Weight",
-            "icon": "check_mark",
-            "row_content": "<p>{{ product.metafields.custom.size_and_weight | metafield_tag }}</p>",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_row_BEH4iB",
-        "collapsible_row_ijJcE8",
-        "collapsible_row_mX8zjf",
-        "collapsible_row_bWPJTh"
-      ],
-      "settings": {
-        "caption": "",
-        "heading": "Product Details",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "row",
-        "color_scheme": "scheme-2",
-        "container_color_scheme": "",
-        "open_first_collapsible_row": true,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "collapsible_content_emk6PE": {
-      "type": "collapsible-content",
-      "blocks": {
-        "collapsible_row_aGiL9H": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Cooling",
-            "icon": "check_mark",
-            "row_content": "<p>{{ product.metafields.custom.cooling | metafield_tag }}</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_ehtP3N": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Freezing",
-            "icon": "check_mark",
-            "row_content": "<p>{{ product.metafields.custom.freezing | metafield_tag }}</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_Xt7DL8": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Programmes",
-            "icon": "check_mark",
-            "row_content": "<p>{{ product.metafields.custom.programmes | metafield_tag }}</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_YEmFD9": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Light",
-            "icon": "check_mark",
-            "row_content": "<p>{{ product.metafields.custom.light.value }}</p>",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_row_aGiL9H",
-        "collapsible_row_ehtP3N",
-        "collapsible_row_Xt7DL8",
-        "collapsible_row_YEmFD9"
-      ],
-      "settings": {
-        "caption": "",
-        "heading": "Test collapsible content",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "none",
-        "color_scheme": "",
-        "container_color_scheme": "",
-        "open_first_collapsible_row": false,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -221,12 +99,24 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "custom_product_details_gz7aWp": {
+      "type": "custom-product-details",
+      "settings": {
+        "heading": "Unique Product details",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
-    "collapsible_content_tGJhKG",
-    "collapsible_content_emk6PE",
+    "custom_product_details_gz7aWp",
     "related-products"
   ]
 }
