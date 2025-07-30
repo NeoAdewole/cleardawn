@@ -80,3 +80,69 @@
 .product-card-wrapper .card__information .card__heading a {
   color: var(--color-background);
 }
+
+/* Carousel styles */
+.banner-carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-carousel {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(.4, 0, .2, 1);
+  will-change: transform;
+}
+
+.banner-carousel-slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.banner-carousel-img {
+  width: 100%;
+  display: block;
+}
+
+.banner-carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.banner-carousel-arrow.prev {
+  left: 10px;
+}
+
+.banner-carousel-arrow.next {
+  right: 10px;
+}
+
+.banner-carousel-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5em;
+}
+
+.banner-carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0.5;
+  border: none;
+  cursor: pointer;
+}
+
+.banner-carousel-dot.active {
+  opacity: 1;
+  background: var(--color-brand-primary, #000);
+}
