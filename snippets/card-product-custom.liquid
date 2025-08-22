@@ -23,10 +23,10 @@
 {%- unless skip_styles -%}
   {{ 'component-rating.css' | asset_url | stylesheet_tag }}
   {{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
-
   {{ 'component-price.css' | asset_url | stylesheet_tag }}
   {{ 'quick-order-list.css' | asset_url | stylesheet_tag }}
   {{ 'quantity-popover.css' | asset_url | stylesheet_tag }}
+  {{ 'component-card-images.css' | asset_url | stylesheet_tag }}
 {%- endunless -%}
 {%- if card_product and card_product != empty -%}
   {%- liquid
@@ -59,9 +59,9 @@
         class="card__inner custom {% if settings.card_style == 'standard' %}color-{{ settings.card_color_scheme }} gradient{% endif %}{% if card_product.featured_media or settings.card_style == 'standard' %} ratio{% endif %}"
         style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
       >
-        {%- if card_product.featured_media -%}
-          <div class="card__media{% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
-            <div class="media media--transparent media--hover-effect">
+      {%- if card_product.featured_media -%}
+           <div class="ccc-card-figure card__media{% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
+             <div class="media media--transparent media--hover-effect">
               {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
               <img
                 srcset="
@@ -107,11 +107,12 @@
               {%- endif -%}
             </div>
           </div>
-        {% else %}
-          <div class="card__media{% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
-            {{ 'image' | placeholder_svg_tag  }}
-          </div>
-        {%- endif -%}
+          {% else %}
+          <div
+            class="ccc-card-figure card__media{% if image_shape and image_shape != 'default' %} 
+            shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}" style="--ccc-card-ratio: 1 / 1;"
+          >{{ 'image' | placeholder_svg_tag  }}</div>
+         {%- endif -%}
         {% comment %} <div class="card__content"> {% endcomment %}
           {% comment %} <div class="card__information">
             <h3
@@ -473,9 +474,10 @@
                     <div class="quick-add__content-info__media">
                       <div class="quick-add__info">
                         {%- if card_product.featured_media -%}
-                          <div
-                            class="quick-add__product-media"
-                          >
+                           <div
+                             class="quick-add__product-media ccc-card-figure"
+                             style="--ccc-card-ratio: 1 / 1;"
+                           >
                             <div class="quick-add__product-container global-media-settings">
                               {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
                               <img
@@ -593,14 +595,15 @@
       style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
     >
       <div
-        class="card__inner{% if settings.card_style == 'standard' %} color-{{ settings.card_color_scheme }} gradient{% endif %} ratio"
+        class="card__inner{% if settings.card_style == 'standard' %} 
+        color-{{ settings.card_color_scheme }} 
+        gradient{% endif %} ratio"
       >
         <div
-          class="card__media {% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}"
+          class="ccc-card-figure card__media {% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}"
+          style="--ccc-card-ratio: 1 / 1;"
         >
-          <div
-            class="media media--transparent"
-          >
+          <div class="media media--transparent">
             {%- if placeholder_image -%}
               {{ placeholder_image | placeholder_svg_tag: 'placeholder-svg' }}
             {%- else -%}
