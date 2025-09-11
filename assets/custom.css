@@ -9,8 +9,10 @@
 }
 
 .product-card-wrapper .card__inner {
-  min-height: 75%;
-  height: inherit;
+  /* min-height: 75%; */
+  /* padding: 1em; */
+  height: 250px;
+  min-height: 250px;
 }
 
 .product-card-wrapper .card__inner .card__badge {
@@ -29,10 +31,14 @@
   
 } */
 
-.product-card-wrapper .card_inner .card__media .media {
+.product-card-wrapper>.card_inner .card__media .media {
   height: -webkit-fill-available;
   width: auto;
   /* width: 100%; */
+}
+
+.card_inner .card__media .media img {
+  /* padding: 0.5em; */
 }
 
 /* Add flexbox layout to the card content */

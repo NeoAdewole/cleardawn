@@ -282,6 +282,16 @@
   width: 100%;
 }
 
+/* Product card wrapper containment */
+.product-card-wrapper .card--card.card--media>.card__inner>.card__media>.media:not(.media--transparent) {
+  background-color: bisque;
+}
+
+.product-card-wrapper .card--card.card--media>.card__inner>.card__media>.media img {
+  object-fit: contain;
+}
+
+
 .card__inner:not(.ratio)>.card__content {
   height: 100%;
 }
