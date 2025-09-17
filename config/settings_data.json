@@ -226,6 +226,19 @@
           "brand_primary": "#669900",
           "brand_secondary": "#009933"
         }
+      },
+      "scheme-e9b5bd43-4039-4b19-9915-1913c560202b": {
+        "settings": {
+          "background": "#ffffff",
+          "background_gradient": "",
+          "text": "#669900",
+          "button": "#f3f3f3",
+          "button_label": "#669900",
+          "secondary_button_label": "#669900",
+          "shadow": "#121212",
+          "brand_primary": "#669900",
+          "brand_secondary": "#009933"
+        }
       }
     }
   },
