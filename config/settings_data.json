@@ -12,7 +12,7 @@
     "logo": "shopify://shop_images/Bargain_Primary_Logo_3.webp",
     "logo_width": 90,
     "logo2": "shopify://shop_images/logo-bosch-512.webp",
-    "type_header_font": "assistant_n4",
+    "type_header_font": "system_ui_n7",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
     "body_scale": 100,
