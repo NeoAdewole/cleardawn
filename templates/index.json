@@ -41,7 +41,7 @@
             "link": "",
             "button_style_secondary": false,
             "box_align": "middle-center",
-            "show_text_box": false,
+            "show_text_box": true,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
             "color_scheme": "scheme-1",
@@ -82,6 +82,49 @@
         "image_behavior": "none",
         "show_text_below": true,
         "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "rich_text_PgR3EA": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_kjhFNY": {
+          "type": "heading",
+          "settings": {
+            "heading": "Welcome to Biggest Appliance Bargains",
+            "heading_size": "h1"
+          }
+        },
+        "text_4Gnd7d": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_YpLY8C": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_kjhFNY",
+        "text_4Gnd7d",
+        "button_YpLY8C"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "collection_list_HUUVMf": {
@@ -162,6 +205,7 @@
   },
   "order": [
     "slideshow_chHNbz",
+    "rich_text_PgR3EA",
     "collection_list_HUUVMf",
     "featured_collection"
   ]
