@@ -1,3 +1,12 @@
+/* Announcement Bar */
+.announcement-bar {
+  padding: 1rem 0;
+}
+
+.announcement-bar p {
+  margin-left: 2rem;
+}
+
 /* Custom Grid Item */
 /* Force each item to visually have a border */
 .product-grid-container .product-grid {
