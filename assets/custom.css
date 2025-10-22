@@ -1,10 +1,15 @@
 /* Custom Grid Item */
-.product-grid-container .product-grid .grid-item {
-  background-color: antiquewhite;
+/* Force each item to visually have a border */
+.product-grid-container .product-grid {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  padding: 2px;
 }
 
-/* Custom Product Cards */
-.product-card-wrapper {
+.product-grid-container .product-grid .grid__item {
   border: solid 1px var(--color-brand-primary);
 }
 
@@ -18,41 +23,14 @@
 }
 
 .product-card-wrapper .card--standard .card__inner .card__media {
-  /* background-color: #d0d0d0; */
   margin: var(--image-padding);
   max-height: 100%;
   width: calc(100% - 2 * var(--image-padding));
 }
 
-
-/* .product-card-wrapper .card--standard .card__inner .card__media .media {
-  
-} */
-
 .product-card-wrapper .card_inner .card__media .media {
   height: -webkit-fill-available;
   width: auto;
-  /* width: 100%; */
-}
-
-/* Add flexbox layout to the card content */
-/* .product-card-wrapper .card:not(.ratio)>.card__content {
-  grid-template-rows: max-content minmax(0, 1fr) max-content auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-} */
-
-/* Ensure the card information takes up the remaining space */
-.product-card-wrapper .card__information {
-  flex-grow: 1;
-  /* grid-row-start: 3; */
-  color: var(--color-brand-primary);
-  background-color: var(--color-background);
-  -webkit-transition: background-color 0.6s;
-  -moz-transition: background-color 0.6s;
-  transition: background-color 0.6s;
 }
 
 .product-card-wrapper .card__information .card__heading,
