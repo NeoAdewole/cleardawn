@@ -88,9 +88,9 @@
       "type": "featured-collection",
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
-        "title": "Black Friday",
+        "title": "Black Friday Sales",
         "heading_size": "h1",
-        "description": "<p>Get Amazing savings on these products</p>",
+        "description": "<p>Get an amazing 10% discount on select products as part of our Black Friday promo.</p>",
         "show_description": false,
         "description_style": "body",
         "collection": "black-friday-sales-collection",
